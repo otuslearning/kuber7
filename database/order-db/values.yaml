@@ -1,0 +1,12 @@
+config:
+  name: database-order-service
+secret:
+  name: order-service-password
+job:
+  name: create-database-order
+  labels: create-order-db
+postgres:
+  password: J29yZGVyX3NlcnZpY2VfcGFzc3dvcmQn
+application:
+  namespace: development
+  password: b3JkZXJfc2VydmljZV9wYXNzd29yZA==

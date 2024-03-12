@@ -1,0 +1,12 @@
+controller:
+  replicaCount: 3
+#  hostAliases:
+#    - ip: "127.0.0.1"
+#    - localhost
+#broker:
+#  hostAliases:
+#    - ip: "127.0.0.1"
+#    - localhost
+listeners:
+  client:
+    protocol: PLAINTEXT

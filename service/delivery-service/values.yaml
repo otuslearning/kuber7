@@ -1,0 +1,22 @@
+host:
+  name: arch.homework
+application:
+  namespace: development
+  name: delivery-service
+  label: delivery-service
+  service:
+    port: 80
+  container:
+    port: 8080
+    env:
+      - key: DB_HOST
+        value: database-postgresql
+      - key: DB_NAME
+        value: delivery_db
+      - key: DB_USERNAME
+        value: delivery_service
+      - key: KAFKA_BOOTSTRAP_SERVERS
+        value: kafka:9092
+  replicaCount: 1
+  image:
+    repository: otuslearning/delivery-service:0.0.1

@@ -1,0 +1,12 @@
+config:
+  name: database-delivery-service
+secret:
+  name: delivery-service-password
+job:
+  name: create-database-delivery
+  labels: create-delivery-db
+postgres:
+  password: J2RlbGl2ZXJ5X3NlcnZpY2VfcGFzc3dvcmQn
+application:
+  namespace: development
+  password: ZGVsaXZlcnlfc2VydmljZV9wYXNzd29yZA==

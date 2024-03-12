@@ -1,0 +1,12 @@
+config:
+  name: database-payment-service
+secret:
+  name: payment-service-password
+job:
+  name: create-database-payment
+  labels: create-payment-db
+postgres:
+  password: J3BheW1lbnRfc2VydmljZV9wYXNzd29yZCc=
+application:
+  namespace: development
+  password: cGF5bWVudF9zZXJ2aWNlX3Bhc3N3b3Jk

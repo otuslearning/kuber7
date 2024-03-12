@@ -1,0 +1,12 @@
+config:
+  name: database-billing-service
+secret:
+  name: billing-service-password
+job:
+  name: create-database-billing
+  labels: create-billing-db
+postgres:
+  password: J2JpbGxpbmdfc2VydmljZV9wYXNzd29yZCc=
+application:
+  namespace: development
+  password: YmlsbGluZ19zZXJ2aWNlX3Bhc3N3b3Jk

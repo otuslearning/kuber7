@@ -1,0 +1,12 @@
+ingress:
+    enabled: true
+    hosts:
+      - host: kafka-ui.arch.homework
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+console:
+  config:
+    kafka:
+      brokers:
+        - kafka:9092

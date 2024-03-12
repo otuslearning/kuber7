@@ -1,0 +1,12 @@
+config:
+  name: database-store-service
+secret:
+  name: store-service-password
+job:
+  name: create-database-store
+  labels: create-store-db
+postgres:
+  password: J3N0b3JlX3NlcnZpY2VfcGFzc3dvcmQn
+application:
+  namespace: development
+  password: c3RvcmVfc2VydmljZV9wYXNzd29yZA==

@@ -1,0 +1,12 @@
+config:
+  name: database-notification-service
+secret:
+  name: notification-service-password
+job:
+  name: create-database-notification
+  labels: create-notification-db
+postgres:
+  password: J25vdGlmaWNhdGlvbl9zZXJ2aWNlX3Bhc3N3b3JkJw==
+application:
+  namespace: development
+  password: bm90aWZpY2F0aW9uX3NlcnZpY2VfcGFzc3dvcmQ=

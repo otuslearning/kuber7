@@ -1,0 +1,6 @@
+apiVersion: v2
+name: notification-db
+description: A Helm chart for notification-db
+type: application
+version: 0.0.1
+appVersion: 0.0.1

@@ -1,0 +1,22 @@
+host:
+  name: arch.homework
+application:
+  namespace: development
+  name: store-service
+  label: store-service
+  service:
+    port: 80
+  container:
+    port: 8080
+    env:
+      - key: DB_HOST
+        value: database-postgresql
+      - key: DB_NAME
+        value: store_db
+      - key: DB_USERNAME
+        value: store_service
+      - key: KAFKA_BOOTSTRAP_SERVERS
+        value: kafka:9092
+  replicaCount: 1
+  image:
+    repository: otuslearning/store-service:0.0.1

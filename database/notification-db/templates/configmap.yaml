@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.config.name }}
+  namespace: {{ .Values.application.namespace }}
+data:
+  create.sql: |
+    CREATE USER notification_service WITH PASSWORD :PSWORD;
+    CREATE DATABASE notification_db with owner notification_service;
